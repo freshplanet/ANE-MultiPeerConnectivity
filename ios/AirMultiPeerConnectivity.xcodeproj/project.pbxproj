@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39E4C14816359F4F00995941 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E4C14716359F4F00995941 /* FlashRuntimeExtensions.h */; };
+		5A277BEB17C3C43F005E6B65 /* AirMultiPeerConnectivity-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5A277BE817C3C43F005E6B65 /* AirMultiPeerConnectivity-Prefix.pch */; };
+		5A277BEC17C3C43F005E6B65 /* AirMultiPeerConnectivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A277BE917C3C43F005E6B65 /* AirMultiPeerConnectivity.h */; };
+		5A277BED17C3C43F005E6B65 /* AirMultiPeerConnectivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A277BEA17C3C43F005E6B65 /* AirMultiPeerConnectivity.m */; };
+		5A277BEE17C3C4F1005E6B65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6596B0C3162C826300E70AAF /* Foundation.framework */; };
+		5A277BF017C3C506005E6B65 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A277BEF17C3C506005E6B65 /* MultipeerConnectivity.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5A277BF217C3C514005E6B65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A277BF117C3C514005E6B65 /* UIKit.framework */; };
+		5A277BF417C3C51C005E6B65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A277BF317C3C51C005E6B65 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39E4C14716359F4F00995941 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = "/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/include/FlashRuntimeExtensions.h"; sourceTree = "<absolute>"; };
+		5A277BE817C3C43F005E6B65 /* AirMultiPeerConnectivity-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AirMultiPeerConnectivity-Prefix.pch"; path = "AirMultiPeerConnectivity/AirMultiPeerConnectivity-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		5A277BE917C3C43F005E6B65 /* AirMultiPeerConnectivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AirMultiPeerConnectivity.h; path = AirMultiPeerConnectivity/AirMultiPeerConnectivity.h; sourceTree = SOURCE_ROOT; };
+		5A277BEA17C3C43F005E6B65 /* AirMultiPeerConnectivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AirMultiPeerConnectivity.m; path = AirMultiPeerConnectivity/AirMultiPeerConnectivity.m; sourceTree = SOURCE_ROOT; };
+		5A277BEF17C3C506005E6B65 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		5A277BF117C3C514005E6B65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A277BF317C3C51C005E6B65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6596B0C0162C826300E70AAF /* libAirMultiPeerConnectivity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirMultiPeerConnectivity.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6596B0C3162C826300E70AAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6596B0BD162C826300E70AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A277BF417C3C51C005E6B65 /* CoreGraphics.framework in Frameworks */,
+				5A277BF217C3C514005E6B65 /* UIKit.framework in Frameworks */,
+				5A277BF017C3C506005E6B65 /* MultipeerConnectivity.framework in Frameworks */,
+				5A277BEE17C3C4F1005E6B65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6596B0B5162C826300E70AAF = {
+			isa = PBXGroup;
+			children = (
+				6596B0E1162C826300E70AAF /* AirBackgroundMusic */,
+				6596B0C2162C826300E70AAF /* Frameworks */,
+				6596B0C1162C826300E70AAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6596B0C1162C826300E70AAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6596B0C0162C826300E70AAF /* libAirMultiPeerConnectivity.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6596B0C2162C826300E70AAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A277BF317C3C51C005E6B65 /* CoreGraphics.framework */,
+				5A277BF117C3C514005E6B65 /* UIKit.framework */,
+				5A277BEF17C3C506005E6B65 /* MultipeerConnectivity.framework */,
+				6596B0C3162C826300E70AAF /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6596B0E1162C826300E70AAF /* AirBackgroundMusic */ = {
+			isa = PBXGroup;
+			children = (
+				5A277BE917C3C43F005E6B65 /* AirMultiPeerConnectivity.h */,
+				5A277BEA17C3C43F005E6B65 /* AirMultiPeerConnectivity.m */,
+				6596B0E2162C826300E70AAF /* Supporting Files */,
+			);
+			path = AirBackgroundMusic;
+			sourceTree = "<group>";
+		};
+		6596B0E2162C826300E70AAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A277BE817C3C43F005E6B65 /* AirMultiPeerConnectivity-Prefix.pch */,
+				39E4C14716359F4F00995941 /* FlashRuntimeExtensions.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6596B0BE162C826300E70AAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E4C14816359F4F00995941 /* FlashRuntimeExtensions.h in Headers */,
+				5A277BEB17C3C43F005E6B65 /* AirMultiPeerConnectivity-Prefix.pch in Headers */,
+				5A277BEC17C3C43F005E6B65 /* AirMultiPeerConnectivity.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6596B0BF162C826300E70AAF /* AirMultiPeerConnectivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6596B0EA162C826300E70AAF /* Build configuration list for PBXNativeTarget "AirMultiPeerConnectivity" */;
+			buildPhases = (
+				6596B0BC162C826300E70AAF /* Sources */,
+				6596B0BD162C826300E70AAF /* Frameworks */,
+				6596B0BE162C826300E70AAF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirMultiPeerConnectivity;
+			productName = AirBackgroundMusic;
+			productReference = 6596B0C0162C826300E70AAF /* libAirMultiPeerConnectivity.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6596B0B7162C826300E70AAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 6596B0BA162C826300E70AAF /* Build configuration list for PBXProject "AirMultiPeerConnectivity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6596B0B5162C826300E70AAF;
+			productRefGroup = 6596B0C1162C826300E70AAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6596B0BF162C826300E70AAF /* AirMultiPeerConnectivity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6596B0BC162C826300E70AAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A277BED17C3C43F005E6B65 /* AirMultiPeerConnectivity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6596B0E8162C826300E70AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		6596B0E9162C826300E70AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6596B0EB162C826300E70AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AirMultiPeerConnectivity.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirMultiPeerConnectivity/AirMultiPeerConnectivity-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AirMultiPeerConnectivity;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		6596B0EC162C826300E70AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AirMultiPeerConnectivity.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirMultiPeerConnectivity/AirMultiPeerConnectivity-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AirMultiPeerConnectivity;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6596B0BA162C826300E70AAF /* Build configuration list for PBXProject "AirMultiPeerConnectivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6596B0E8162C826300E70AAF /* Debug */,
+				6596B0E9162C826300E70AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6596B0EA162C826300E70AAF /* Build configuration list for PBXNativeTarget "AirMultiPeerConnectivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6596B0EB162C826300E70AAF /* Debug */,
+				6596B0EC162C826300E70AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6596B0B7162C826300E70AAF /* Project object */;
+}
