@@ -1,7 +1,7 @@
-Air Native Extension for iOS Audio Session (iOS)
+Air Native Extension for iOS Multipeer Connectivity (iOS7)
 ======================================
 
-This is an [Air native extension](http://www.adobe.com/devnet/air/native-extensions-for-air.html) for managing the background music on iOS and Android. It will disable music from other apps and set the appropriate audio session for your app. It has been developed by [FreshPlanet](http://freshplanet.com) and is used in the game [SongPop](http://songpop.fm).
+This is an [Air native extension](http://www.adobe.com/devnet/air/native-extensions-for-air.html) for managing the multipeer connections on iOS. It will detect all iOS7 nearby devices, connect to them and send a message to the connected ones. It has been developed by [FreshPlanet](http://freshplanet.com) and is used in the game [SongPop](http://songpop.fm).
 
 
 Installation
@@ -12,8 +12,30 @@ The ANE binary (AirBackgroundMusic.ane) is located in the *bin* folder. You shou
 
 Usage
 ---------
+The ANE comes in 2 parts:
+- an assistant (to help being discovered)
+- a discovery helper (to help discover)
 
-You just need to call *AirBackgroundMusic.getInstance().initialize()*.
+To start the assistant, you need to call *AirMultiPeerConnectivity.getInstance().startAssistant(serviceType, peerName)*
+To stop the assistant, you need to call *AirMultiPeerConnectivity.getInstance().stopAssistant()*
+
+To start the discovery, you need to call *AirMultiPeerConnectivity.getInstance().startDiscovery(serviceType, peerName)*
+To stop the discovery, you need to call *AirMultiPeerConnectivity.getInstance().stopDiscovery()*
+
+The serviceType is a unique identifier, and should be the same for discovery and assistant. The peerName value is the device unique identifier.
+For those two parameters, you can put whatever value you want.
+
+
+Once the discovery starts, each peer found will dispatch a *AirMultiPeerConnectivityEvent.FOUND_PEER_EVENT* event
+To register to this event, 
+    
+    AirMultiPeerConnectivity.getInstance().addEventListener(AirMultiPeerConnectivityEvent.FOUND_PEER_EVENT, onPeerFound);
+    
+    private function onPeerFound(event:AirMultiPeerConnectivityEvent):void
+    {
+        var peerName:String = event.peerName;
+        // TODO
+    }
 
 
 Build script
@@ -30,4 +52,5 @@ Should you need to edit the extension source code and/or recompile it, you will 
 Authors
 ------
 
-This ANE has been written by [Thibaut Crenn](https://github.com/titi-us) (iOS) and [Daniel Rodriguez](https://github.com/dornad) (Android). It belongs to [FreshPlanet Inc.](http://freshplanet.com) and is distributed under the [Apache Licence, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+This ANE has been written by [Thibaut Crenn](https://github.com/titi-us) (iOS).
+It belongs to [FreshPlanet Inc.](http://freshplanet.com) and is distributed under the [Apache Licence, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
