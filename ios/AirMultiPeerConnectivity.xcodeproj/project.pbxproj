@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39E4C14816359F4F00995941 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E4C14716359F4F00995941 /* FlashRuntimeExtensions.h */; };
+		16FEFD4C1A645E330040197D /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 16FEFD4B1A645E330040197D /* FlashRuntimeExtensions.h */; };
 		5A277BEB17C3C43F005E6B65 /* AirMultiPeerConnectivity-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5A277BE817C3C43F005E6B65 /* AirMultiPeerConnectivity-Prefix.pch */; };
 		5A277BEC17C3C43F005E6B65 /* AirMultiPeerConnectivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A277BE917C3C43F005E6B65 /* AirMultiPeerConnectivity.h */; };
 		5A277BED17C3C43F005E6B65 /* AirMultiPeerConnectivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A277BEA17C3C43F005E6B65 /* AirMultiPeerConnectivity.m */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39E4C14716359F4F00995941 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = "/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/include/FlashRuntimeExtensions.h"; sourceTree = "<absolute>"; };
+		16FEFD4B1A645E330040197D /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = SOURCE_ROOT; };
 		5A277BE817C3C43F005E6B65 /* AirMultiPeerConnectivity-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AirMultiPeerConnectivity-Prefix.pch"; path = "AirMultiPeerConnectivity/AirMultiPeerConnectivity-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		5A277BE917C3C43F005E6B65 /* AirMultiPeerConnectivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AirMultiPeerConnectivity.h; path = AirMultiPeerConnectivity/AirMultiPeerConnectivity.h; sourceTree = SOURCE_ROOT; };
 		5A277BEA17C3C43F005E6B65 /* AirMultiPeerConnectivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AirMultiPeerConnectivity.m; path = AirMultiPeerConnectivity/AirMultiPeerConnectivity.m; sourceTree = SOURCE_ROOT; };
@@ -85,8 +85,8 @@
 		6596B0E2162C826300E70AAF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				16FEFD4B1A645E330040197D /* FlashRuntimeExtensions.h */,
 				5A277BE817C3C43F005E6B65 /* AirMultiPeerConnectivity-Prefix.pch */,
-				39E4C14716359F4F00995941 /* FlashRuntimeExtensions.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -98,9 +98,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39E4C14816359F4F00995941 /* FlashRuntimeExtensions.h in Headers */,
 				5A277BEB17C3C43F005E6B65 /* AirMultiPeerConnectivity-Prefix.pch in Headers */,
 				5A277BEC17C3C43F005E6B65 /* AirMultiPeerConnectivity.h in Headers */,
+				16FEFD4C1A645E330040197D /* FlashRuntimeExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,10 +214,12 @@
 		6596B0EB162C826300E70AAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/AirMultiPeerConnectivity.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirMultiPeerConnectivity/AirMultiPeerConnectivity-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AirMultiPeerConnectivity;
 				SKIP_INSTALL = YES;
@@ -228,10 +230,12 @@
 		6596B0EC162C826300E70AAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/AirMultiPeerConnectivity.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirMultiPeerConnectivity/AirMultiPeerConnectivity-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AirMultiPeerConnectivity;
 				SKIP_INSTALL = YES;
