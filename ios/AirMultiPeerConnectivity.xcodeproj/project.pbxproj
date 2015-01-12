@@ -214,10 +214,12 @@
 		6596B0EB162C826300E70AAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/AirMultiPeerConnectivity.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirMultiPeerConnectivity/AirMultiPeerConnectivity-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AirMultiPeerConnectivity;
 				SKIP_INSTALL = YES;
@@ -228,10 +230,12 @@
 		6596B0EC162C826300E70AAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/AirMultiPeerConnectivity.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirMultiPeerConnectivity/AirMultiPeerConnectivity-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AirMultiPeerConnectivity;
 				SKIP_INSTALL = YES;
