@@ -38,6 +38,10 @@ To register to this event,
     }
 
 
+Notes:
+* included binary has been compiled for 64-bit iOS support
+
+
 Build script
 ---------
 
